@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medio-pago | Solo-Fútbol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo-pago">Completa Tu Pago</div>
+    
+    <!--MODAL-->
+    <div id="Modal-pago" class="modal">
+        <div class="contenido-modal">
+            <span class="cerrar">&times;</span>
+            <h2>¡Nuevos Métodos de Pago!</h2>
+            <p>Ahora puedes pagar con Match, Tenpo y Transferencia.</p>
+        </div>
+    </div>
+
+   <!--ESTE ES EL FORMULARIO DE COMPRA--> 
+    
+       <div class="formulario-pago-camiseta">
+           <form id="formulario-pago">
+               <div>
+                   <label for="nombre">Nombre: </label>
+                   <input type="text" id="nombre" name="nombre" required placeholder="Ingrese nombre">
+                   <span class="error" id="nombre-error"></span>
+               </div>
+   
+               <div>
+                   <label for="apellido">Apellido: </label>
+                   <input type="text" id="apellido" name="apellido" required placeholder="Ingrese apellido">
+                   <span class="error" id="apellido-error"></span>
+               </div>
+   
+               <div>
+                   <label for="rut">Rut (sin puntos ni guion): </label>
+                   <input type="text" id="rut" name="rut" required placeholder="Ingrese rut">
+                   <span class="error" id="rut-error"></span>
+               </div>
+   
+               <div>
+                   <label for="comuna">Comuna: </label>
+                   <input type="text" id="comuna" name="comuna" required placeholder="Ingrese comuna">
+                   <span class="error" id="comuna-error"></span>
+               </div>
+   
+               <div>
+                   <label for="direccion">Direccion: </label>
+                   <input type="text" id="direccion" name="direccion" required placeholder="Ingrese direccion">
+                   <span class="error" id="direccion-error"></span>
+               </div>
+   
+               <div>
+                   <label for="tipo-vivienda">Tipo Vivienda</label>
+                   <select name="tipo-vivienda" id="tipo-vivienda" required>
+                       <option value="guion">-</option>
+                       <option value="casa">Casa</option>
+                       <option value="departamento">Departamento</option>
+                   </select>
+                   <span class="error" id="tipo-vivienda-error"></span>
+               </div>
+   
+               <div>
+                   <label for="tipo-pago">Tipo Pago</label>
+                   <select name="tipo-pago" id="tipo-pago" required>
+                       <option value="guion">-</option>
+                       <option value="match">Match</option>
+                       <option value="tenpo">Tenpo</option>
+                       <option value="transferencia">Transferencia</option>
+                       <option value="debito">Debito</option>
+                       <option value="credito">Credito</option>
+                   </select>
+                   <span class="error" id="tipo-pago-error"></span>
+               </div>
+   
+               <div class="submit-container">
+                   <button type="submit">Enviar</button>
+               </div>
+   
+               <div class="general-error" id="general-error">
+                   Falta un campo por llenar, no se envió el formulario.
+               </div>
+           </form>
+
+       </div>
+
+       <div class="container-button">
+        <a href="INICIO.html">
+            <button id="volver-inicio">Salir</button>
+        </a>
+    </div>
+   
+  
+    <script src="ap.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+[
+    {
+        "precio": 50000,
+        "id": 1,
+        "title": "Camiseta Real Madrid",
+        "thumbnailUrl": "camiseta_realmadrid.jpg"
+    },
+    {
+        "precio": 42000,
+        "id": 2,
+        "title": "Camiseta Selección Chilena",
+        "thumbnailUrl": "camiseta_selechile.jpeg"
+    },
+    {
+        "precio": 55000,
+        "id": 3,
+        "title": "Camiseta United",
+        "thumbnailUrl": "camiseta_united.webp"
+    },
+    {
+        "precio": 70000,
+        "id": 4,
+        "title": "Camiseta Visita Colo-colo",
+        "thumbnailUrl": "camiseta_colocolo.avif"
+    },
+    {
+        "precio":50000,
+        "id":5,
+        "title":"Camiseta Mexico",
+        "thumbnailUrl":"camiseta_mexico.avif"
+    },
+    {
+        "precio":40000,
+        "id":6,
+        "title":"Short Chile",
+        "thumbnailUrl":"short_chile.webp"
+    },
+    {
+        "precio":10000,
+        "id":7,
+        "title":"Short peru",
+        "thumbnailUrl":"short_peru.avif"
+    },
+    {
+        "precio":10000,
+        "id":8,
+        "title":"camiseta seleccion españa",
+        "thumbnailUrl":"camiseta_espana.jpeg"
+    },
+    {
+        "precio":40000,
+        "id":9,
+        "title":"Short Italia",
+        "thumbnailUrl":"short_italia.avif"
+    },
+    {
+        "precio":10000,
+        "id":10,
+        "title":"Short Belgica",
+        "thumbnailUrl":"short_belgica.avif"
+    },
+    {
+        "precio":35000,
+        "id":11,
+        "title":"Short juventus",
+        "thumbnailUrl":"short_juve.avif"
+    }
+
+]
+

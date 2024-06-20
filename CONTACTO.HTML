@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Solo-Fútbol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo">Solo-Futbol</div>
+                <img src="https://em-content.zobj.net/source/apple/232/soccer-ball_26bd.png" alt="logo-pelota-futbol" class="logo-img">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <a href="INICIO.html">Inicio</a>
+                <a href="PRODUCTOS.html">Productos</a>
+                <a href="NOSOTROS.html">Nosotros</a>
+                <a href="CONTACTO.html">Contacto</a>
+            </div>
+        </nav>
+    </div>
+
+
+    <h2 id="titulo-contacto" class="text-center mt-3">DUDAS? CONTACTANOS</h2>
+    <div class="containeeer">
+        <h2 id="titulo2-contacto">Escríbenos</h2>
+        <form id="formulario-contacto" class="formulario-contacto">
+            <div class="formu-contacto-nombre">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                <small class="error-message" id="error-nombre"></small>
+            </div>
+            <div class="formu-contacto-email">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <small class="error-message" id="error-email"></small>
+            </div>
+            <div class="formu-contacto-numero-telefono">
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+56912345678" required>
+                <small class="error-message" id="error-telefono"></small>
+            </div>
+            <div class="formu-contacto-mensaje">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+                <small class="error-message" id="error-mensaje"></small>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+    </div>
+
+    <script src="ap.js"></script>
+</body>
+</html>

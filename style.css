@@ -1,0 +1,1164 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40; /* Consistent color */
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .logo:hover {
+    color: #d35400;
+}
+
+.navbar .menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.navbar .enlaces, .navbar .links-navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar .enlaces a, .navbar .links-navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 15px;
+}
+
+.navbar .enlaces a:hover, .navbar .links-navbar a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+/*IMAGEN PELOTA FUTBOL*/
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+
+/* Títulos */
+#titulo-productos, #comercial, #titulo-camisetas-inicio, #titulo2-contacto, #titulo-nosotros, h2, h3, h4 {
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+#titulo-productos, #comercial {
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+
+#titulo2-contacto, #subtitulo-nosotros {
+    font-size: 25px;
+}
+
+#titulo-nosotros {
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+/* Subtítulos */
+#subtitulo-productos {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#subtitulo-camisetas-inicio {
+    font-size: 24px;
+    color: #8f8b83;
+    text-shadow: 1px 1px 2px rgba(67, 41, 41, 0.5);
+}
+
+#comercial2 {
+    color: #0b0b0b;
+    font-weight: bold;
+}
+
+#subtitulo-nosotros {
+    color: #555;
+    font-family: monospace;
+}
+
+/* Container */
+.container-center, .container, .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-items, .container-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container-items {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Items */
+.item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.item figure {
+    margin: 0;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+}
+
+.info-producto {
+    padding: 20px;
+    text-align: center;
+}
+
+.info-producto h5 {
+    font-size: 24px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.info-producto .precio {
+    font-size: 20px;
+    color: #e67e22;
+    margin: 10px 0;
+}
+
+/* Botones */
+#boton-añadir-carro, .boton-añadir-carro, .btn {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#boton-añadir-carro:hover, .boton-añadir-carro:hover {
+    background-color: #d35400;
+}
+
+.link-boton-compraya:hover {
+    background-color: #6493bf;
+    transform: translateY(-10px);
+}
+
+/* Formulario de Contacto */
+.containeeer {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.formu-contacto-nombre,
+.formu-contacto-email,
+.formu-contacto-numero-telefono,
+.formu-contacto-mensaje {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    display: none;
+}
+
+/* Nosotros */
+#parrafo-nostros {
+    color: #666;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+#parrafo-nostros span {
+    font-weight: bold;
+    color: #333;
+}
+
+#tabla-nosotros {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+#tabla-nosotros th, #tabla-nosotros td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#tabla-nosotros th {
+    background-color: #333;
+    color: #fff;
+}
+
+#tabla-nosotros tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Cartas */
+#container-cartas-ini {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#container-cartas-ini .card {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+#container-cartas-ini img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para el carro de compra */
+.cart-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-item img {
+    max-width: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.cart-item h4 {
+    margin: 0 0 10px 0;
+}
+
+.quantity-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.delivery-options {
+    margin-top: 20px;
+}
+
+.delivery-options label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.resumen {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.resumen input[type="text"] {
+    width: calc(100% - 110px);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.resumen button {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+#boton-compra {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    color: #17a521;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .enlaces {
+        flex-direction: column;
+        display: none;
+    }
+    .navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar .menu-toggle div {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 6px 0;
+    }
+    .navbar .enlaces.mostrar {
+        display: flex;
+    }
+    .container-items {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.quantity-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-buttons button {
+    width: 30px;
+    height: 30px;
+    line-height: 0;
+    text-align: center;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.delivery-options {
+    margin-top: 10px;
+}
+
+.delivery-options label {
+    display: block;
+}
+
+.resumen {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#total-pedido {
+    margin-bottom: 20px;
+}
+
+#iniciar-compra, #vaciar-carrito {
+    margin-top: 10px;
+}
+/*TITULOS DE INICIO*/
+#titulos {
+    text-align: center;
+}
+
+#titulo-inicio {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#parrafo-subtitulo {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.titulo-llamativo{
+    text-align:center;
+}
+#parrafo-subtitulo1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.1em;
+    color: #454242;
+}
+
+
+/*ESTILOS DEL COMPRA-LISTA*/
+
+.contenedor {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+}
+
+.compra-lis {
+    margin-bottom: 20px;
+}
+
+.mensaje-compra {
+    margin-bottom: 20px;
+}
+
+.compra-lista {
+    display: block;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.emote-camion {
+    display: block;
+    font-size: 1.5em;
+    color: #555;
+}
+
+.volver-inicio {
+    text-align: center;
+}
+
+.volver-iniciopagina {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #00bfa5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.volver-iniciopagina:hover {
+    background-color: #009688;
+}
+
+/* contenedor1 debajo del carrusel*/
+
+.contenedor-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.contenedor-1 img {
+    width: 200px; /* Ajustar tamaño de las imágenes */
+    height: auto; /* Mantener la proporción de las imágenes */
+    max-width: 100%; /* Asegurarse de que sean responsive */
+    border: 2px solid #ccc; /* Borde para mejor visualización */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+@media (min-width: 600px) {
+    .contenedor-1 img {
+        width: 250px; /* Tamaño de imágenes para pantallas más grandes */
+    }
+}
+
+@media (min-width: 900px) {
+    .contenedor-1 img {
+        width: 300px; /* Tamaño de imágenes para pantallas aún más grandes */
+    }
+}
+
+/*Para que las 5 imagenes del inicio se puedn mover cuando pasamos por arribs*/
+.contenedor-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.contenedor-1 img:hover {
+    transform: scale(5.9); /* Aumenta el tamaño de la imagen */
+    transform: translateY(-30px); /* Desplaza la imagen hacia arriba */
+}
+
+/* Estilos para la sección de preguntas frecuentes */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    background-color: #eae7e7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+
+.seccion-preg {
+    width: 100%;
+}
+
+.preguntgs-container {
+    width: 100%;
+    background-color: #393939; /* fondo*/
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pregun-titulo {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #f1eeee;
+    text-align: center;
+}
+
+.pregun-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e1d5d5; /*el color de las linead, para seprar cada pregunta*/
+}
+
+.preguntaaas {
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preguntaaas:hover {
+    color: #161616;
+}
+
+.respuestas {
+    display: none;
+    padding: 15px;
+    background-color: #d9dcdb; /*color de los cuadrados, donde salen las respuestas*/
+    margin-top: 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/*ESTILO PARA CONTENEDOR2, LO MAS VENDIDO*/
+
+.contenedor-2 {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#titulo-mas-vendido {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.lo-mas-vendido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    background-color: #bbbbbb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.lo-mas-vendido img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.1s ease, box-shadow 100s ease;
+    
+}
+
+.lo-mas-vendido img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    #titulo-mas-vendido {
+        font-size: 1.5em;
+    }
+
+    .lo-mas-vendido img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo-mas-vendido {
+        font-size: 1.2em;
+    }
+
+    .lo-mas-vendido img {
+        max-width: 100px;
+    }
+}
+
+/*ESTILO DEL CARRUSEL*/
+
+.carousel {
+    width: 80%;
+    max-width: 600px;
+}
+
+.carousel img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Media queries para responsividad el carrusel */
+@media (max-width: 768px) {
+    .carousel {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1em;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8em;
+    }
+}
+
+/*BOTON COMPRA-YA! EN EL INICIO*/
+.container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#compra-ya {
+    background-color: #5c9b3d;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#compra-ya:hover {
+    background-color: #365c23;
+    transform: scale(1.05);
+}
+
+#compra-ya:active {
+    background-color: #d9534f;
+    transform: scale(0.95); /*el boton crece a un tamaño dependiendo de que va e el parentesis cuando hacemos click sobre el*/
+}
+
+
+/*ESTILO DEL MODAL*/
+
+
+.modal {
+    display: block; /* Mostrar el modal automáticamente en pantalla */
+    position: fixed; /* Posiciona el modal de forma fija para que permanezca en la misma posición cuando se haga scroll */
+    z-index: 1; /* Asegura que el modal esté por encima de otros elementos en la página */
+    left: 0; /* Coloca el modal en el extremo izquierdo de la pantalla */
+    top: 0; /* Coloca el modal en la parte superior de la pantalla */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Añade barras de desplazamiento si el contenido del modal es más grande que la pantalla */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.contenido-modal {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.cerrar {
+    color: #cb1818;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*ESTILO DEL FORMULARIO DE COMPRA*/
+
+.formulario-pago-camiseta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    background-color: #dad9d9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #ff6f61;
+    outline: none;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.9em;
+    display: none;
+}
+
+.general-error {
+    color: #e74c3c;
+    font-size: 1em;
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+}
+
+.submit-container {
+    text-align: center;
+}
+
+button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #e85a4f;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #d9534f;
+    transform: scale(0.95);
+}
+
+/*TITULO DE METODO DE PAGO*/
+.titulo-pago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(45deg, #a89f9f, #0c0808);/*PARA QUE EN EL TITULO TENGA 2 COLORES*/
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 3em;
+    color: #e4dede;
+    margin-bottom: 20px;
+    font: oblique bold 400% cursive;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn { /*ANIMACION QUE SE LLAMA ASI*/
+    from {          /*inicia en 0% de animacion*/
+        opacity: 0; /*Empieza completamente transparente*/
+        transform: translateY(-100px); /*el elemento empieza a moverse hacia arriba 100pixeles*/
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*ESTILOS PARA PASOS PARA COMPRAR*/
+
+.contenedor-pasos-compra {
+    padding: 20px;
+    background-color: #f1ecec;
+    max-width: 1000px; /* Reducido el ancho máximo */
+    margin: auto;
+    border-radius: 30px; /* Reducción del radio */
+}
+
+#titulo-como-funciona {
+    font-size: 30px; /* Reducido el tamaño de la fuente */
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px; /* Reducido el margen inferior */
+}
+
+.resaltar {
+    color: #0c42e6;
+    font-weight: bold;
+}
+
+.pasos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px; /* Añade espacio entre los elementos */
+}
+
+.paso-items {
+    background-color: rgb(198, 196, 196);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px; /* Reducido el padding */
+    width: calc(33.333% - 30px); /* Ajuste para un diseño más compacto */
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s; /* Añadido para efecto hover */
+}
+
+.paso-items:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+}
+
+.numero-paso {
+    background-color: #416ae3;
+    color: white;
+    border-radius: 50%;
+    width: 35px; /* Ajustado para mejorar la visibilidad */
+    height: 35px; /* Ajustado para mejorar la visibilidad */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; /* Ajustado para mejorar la visibilidad */
+    margin-bottom: 10px;
+}
+
+.imagen-paso {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contenido-paso h2 {
+    font-size: 16px; /* Ajustado para mejorar la visibilidad */
+    margin: 10px 0;
+}
+
+.contenido-paso p {
+    font-size: 13px; /* Ajustado para mejorar la visibilidad */
+    color: #231414;
+}
+
+
+/*NOSOTROS*/
+/* Sección de testimonios */
+
+.testimonios {
+    background-color: #e3eaf1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Reduce el margen inferior */
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto; /* Centra el contenido y reduce el margen */
+}
+
+#titulo-op {
+    font-size: 40px;
+    font-weight: bold;
+    color: #2d8ef5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonio p {
+    font-size: 20px;
+    color: #333;
+}
+
+.testimonio p strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Sección de suscripción */
+.suscripcion {
+    background-color: #3366ff;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.suscripcion h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.suscripcion form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.suscripcion input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.suscripcion button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.suscripcion button[type="submit"]:hover {
+    background-color: #ff9900;
+}
+
+/*CHAT EN VIVO*/
+.container-chat {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#titulos-chat {
+    font-size: 1.5em;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.container-chat .btn-success {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.container-chat .btn-success:hover {
+    background-color: #28a745;
+}
+
+/*SUSCRIPCION EN NOSOTROS*/
+.suscripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    text-align: center;
+    background-color: #3d8cdb;
+}
+
+.suscripcion h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.suscripcion form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suscripcion input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.suscripcion button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1776dc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.suscripcion button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+#susb-pagina{
+    color:rgb(15, 29, 48);
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+
+

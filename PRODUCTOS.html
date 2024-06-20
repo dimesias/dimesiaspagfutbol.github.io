@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | solo-futbol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo">Solo-Futbol</div>
+                <img src="https://em-content.zobj.net/source/apple/232/soccer-ball_26bd.png" alt="logo-pelota-futbol" class="logo-img">
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="enlaces" id="enlaces">
+                <a href="INICIO.html">Inicio</a>
+                <a href="PRODUCTOS.html">Productos</a>
+                <a href="NOSOTROS.html">Nosotros</a>
+                <a href="CONTACTO.html">Contacto</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h2 id="titulo-carro-compras">Carro de compras</h2>
+
+                <div class="cart-item" data-price="50000">
+                    <img src="camiseta_realmadrid.jpg" alt="Camiseta Real Madrid">
+                    <div>
+                        <h4>Camiseta Real Madrid</h4>
+                        <p><strong>$<span class="item-price">50.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio1" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio1" value="casa" checked> Envío a domicilio</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="42000">
+                    <img src="camiseta_selechile.jpeg" alt="Camiseta Selección Chilena">
+                    <div>
+                        <h4>Camiseta Selección Chilena</h4>
+                        <p><strong>$<span class="item-price">42.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio2" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio2" value="casa" checked> Envío a domicilio</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="55000">
+                    <img src="camiseta_united.webp" alt="Camiseta United">
+                    <div>
+                        <h4>Camiseta United</h4>
+                        <p><strong>$<span class="item-price">55.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio3" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio3" value="casa" checked> Envío a domicilio</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="70000">
+                    <img src="camiseta_colocolo.avif" alt="Camiseta Visita Colo-colo">
+                    <div>
+                        <h4>Camiseta Visita Colo-colo</h4>
+                        <p><strong>$<span class="item-price">70.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio4" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio4" value="casa" checked> Envío a domicilio</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="50000">
+                    <img src="camiseta_mexico.avif" alt="Camiseta Mexico">
+                    <div>
+                        <h4>Camiseta Mexico</h4>
+                        <p><strong>$<span class="item-price">50.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio5" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio5" value="casa" checked> Envío a domicilio</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="10000">
+                    <img src="camiseta_espana.jpeg" alt="camiseta seleccion españa">
+                    <div>
+                        <h4>Camiseta Seleccion España</h4>
+                        <p><strong>$<span class="item-price">10.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio6" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio6" value="casa" checked> Envío a domicilio</label>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="40000">
+                    <img src="short_chile.webp" alt="Short Chile">
+                    <div>
+                        <h4>Short Seleccion Chile</h4>
+                        <p><strong>$<span class="item-price">40.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio7" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio7" value="casa" checked> Envío a domicilio</label>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="10000">
+                    <img src="short_peru.avif" alt="Short Peru">
+                    <div>
+                        <h4>Short Seleccion Peru</h4>
+                        <p><strong>$<span class="item-price">10.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio8" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio8" value="casa" checked> Envío a domicilio</label>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="40000">
+                    <img src="short_italia.avif" alt="Short Italia">
+                    <div>
+                        <h4>Short Italia</h4>
+                        <p><strong>$<span class="item-price">40.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio9" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio9" value="casa" checked> Envío a domicilio</label>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="40000">
+                    <img src="shorts_belgica.avif" alt="Short seleccion belgica">
+                    <div>
+                        <h4>Short Seleccion Belgica</h4>
+                        <p><strong>$<span class="item-price">10.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio10" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio10" value="casa" checked> Envío a domicilio</label>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-item" data-price="35000">
+                    <img src="shorts_juve.avif" alt="Short Juventus">
+                    <div>
+                        <h4>Short Juventus</h4>
+                        <p><strong>$<span class="item-price">35.000</span></strong></p>
+                        <div class="quantity-buttons">
+                            <button class="boton-menos btn btn-outline-secondary">-</button>
+                            <input type="text" value="0" class="quantity-input">
+                            <button class="boton-mas btn btn-outline-secondary">+</button>
+                        </div>
+                        <p>Total: $<span class="item-total-price">0</span></p>
+                        <div class="delivery-options">
+                            <label><input type="radio" name="envio11" value="tienda"> Retiro en tienda</label>
+                            <label><input type="radio" name="envio11" value="casa" checked> Envío a domicilio</label>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+            <!--añadimos short de italia-belgica-juve y polera selec españa-->
+            
+            <!--RESUMEN DE COMPRA-->
+            <div class="col-12 col-md-4">
+                <h3>Resumen del pedido</h3>
+                <div class="resumen">
+                    <h4 id="total-pedido">TOTAL DEL PEDIDO: <strong>$<span id="total">0</span></strong></h4>
+                    <p id="iva">Total incluye 19% de IVA</p>
+                    
+                    <!--ESTO HARA QUE EL BOTON INICIAR COMPRA NOS LLEVE A OTRO INDEX HTML-->
+                    <a href="MEDIOPAGO.html">
+                        <button class="btn btn-dark btn-lg btn-block">INICIAR COMPRA</button>
+                    </a>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+    <script src="ap.js"></script>
+</body>
+</html>
